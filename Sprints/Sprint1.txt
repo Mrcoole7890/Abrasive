@@ -1,0 +1,55 @@
+Plan today:
+
+Describe the overall plan for the project
+Get a tally for People
+Describe the game
+	- Starts with a Queue
+	- once everyone is ready the game begins
+	- All players start the same
+		a base
+		three "clan members"
+	- map generation
+		players location
+		monuments
+	
+	- Game
+		Players[Player]
+		Map[x,y]
+		Locations[Locations]
+	
+	- Clan
+		Members
+			Inventory
+			Name
+			Location
+			Heath
+			Status
+		Base
+			Teir
+			Locations
+			Status
+		Name
+		Status
+	- Locations
+		name
+		x,y
+		status
+
+
+	|--------------M-----------------|
+	|----------------------------X---|
+	|------X-------------M-----------|
+	|--------------------------------|
+	|---------M------------------X---|
+
+
+	- Fights occur when player clan members collide
+
+
+Describe the technology stack
+	Angular
+	NodeJS (Backend + ExpressJS)
+	Socket.io
+	Karma
+	Jasmine
+	
