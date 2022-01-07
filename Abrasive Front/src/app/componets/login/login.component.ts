@@ -18,7 +18,6 @@ export class LoginComponent implements OnInit {
   height: String = "";
   HEIGHT_STYLE_PREPEND: String = "height: ";
   HEIGHT_STYLE_APPEND: String = "px;";
-  //private _userSub: Subscription;
 
   constructor(private userService: PlayerService, private socket: Socket, private loginService: LoginService) { 
     this.height = this.HEIGHT_STYLE_PREPEND + window.innerHeight.toString() + this.HEIGHT_STYLE_APPEND;
