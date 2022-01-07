@@ -24,8 +24,8 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.socket.on("Player Exists", function(user: Player){
-      console.log(user.username + " is already queued up!");
+    this.socket.on("Player Exists", function(player: Player){
+      console.log(player.username + " is already queued up!");
     });
     this.socket.on("emptyString", this.userAttemptedToSubmitAEmptyString);
   }
