@@ -1,0 +1,13 @@
+Set up up workplaces
+	visual studio
+	nodejs version (must be the same)
+	jenkins?
+
+Create CRC cards
+	user init (on new connection)
+	game init (on server start)
+	player init (on new user login)
+
+Pass Demo of Queue
+	Do we use it? OR do we remake it?
+	The test for it is broken
