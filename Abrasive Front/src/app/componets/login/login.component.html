@@ -1,6 +1,6 @@
 <div class="login__card-container">
   <div class="login__card">
-    <form class="login__card-form" (ngSubmit)="login()">
+    <form class="login__card-form">
       <label for="username">Username</label>
       <input
         type="username"
@@ -10,7 +10,7 @@
         placeholder="Enter username"
       />
       <p id="usernameInfo">Everyone will see this name!</p>
-      <button>Play!</button>
+      <button (click)="login()">Play!</button>
     </form>
   </div>
 </div>
