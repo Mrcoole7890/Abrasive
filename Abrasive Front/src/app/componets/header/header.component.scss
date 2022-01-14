@@ -1,0 +1,9 @@
+@import "src/colorVariables";
+
+.header-text {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 3rem;
+  font-family: "Press Start 2P", cursive;
+  color: $pumpkin;
+}

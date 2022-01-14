@@ -1,0 +1,30 @@
+@import "./reset";
+@import "./colorVariables";
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  background-color: $ghost;
+}
+
+@keyframes headerAnimation {
+  0% {
+    color: $pumpkin;
+  }
+
+  25% {
+    color: $sand;
+  }
+
+  50% {
+    color: $ruby;
+  }
+
+  100% {
+    color: $pumpkin;
+  }
+}
+
+.textAnimation {
+  animation: headerAnimation 0.5s infinite;
+}

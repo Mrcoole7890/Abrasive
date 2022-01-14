@@ -1,0 +1,63 @@
+@import "src/colorVariables";
+
+.login__card-container {
+  min-height: calc(100vh - 20rem);
+  // width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__card {
+  padding: 1rem;
+  box-shadow: $heavy-box-shadow;
+  background-color: white;
+  color: $pumpkin;
+
+  border-radius: 0.325rem;
+}
+
+.login__card-form {
+  display: flex;
+  flex-direction: column;
+
+  & > *:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+
+  & > label {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  & > input {
+    font-size: 1.25rem;
+    padding: 5px 3px;
+    border: 0.125rem solid $pumpkin;
+    border-radius: 0.325rem;
+    background-color: gray;
+    color: black;
+
+    &:focus {
+      background-color: $ghost;
+    }
+  }
+
+  & > p {
+    color: $ruby;
+  }
+
+  & > button {
+    background-color: $pumpkin;
+    border-radius: 0.325rem;
+    color: white;
+    align-self: center;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+
+    &:hover {
+      background-color: $gray;
+    }
+  }
+}
