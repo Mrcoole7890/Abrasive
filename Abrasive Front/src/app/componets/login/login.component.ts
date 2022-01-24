@@ -28,6 +28,7 @@ export class LoginComponent implements OnInit {
       console.log(player.username + " is already queued up!");
     });
     this.socket.on("emptyString", this.userAttemptedToSubmitAEmptyString);
+    this.socket.on("Player queue was updated", this.handelUpdatedQueue);
   }
 
   newPlayer(): void {
@@ -37,5 +38,11 @@ export class LoginComponent implements OnInit {
 
   userAttemptedToSubmitAEmptyString(): void{
     console.log("Empty Strings are not acceptible");
+  }
+
+  handelUpdatedQueue(players:any[]) : void{
+    players.forEach(element => {
+      console.log(element.player.username.username);
+    });
   }
 }

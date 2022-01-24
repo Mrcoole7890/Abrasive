@@ -11,5 +11,6 @@ export class PlayerService {
 
   newPlayer(username: String) {
     this.socket.emit('newUser', new Player(username));
+    //console.log("User name attempted");
   }
 }

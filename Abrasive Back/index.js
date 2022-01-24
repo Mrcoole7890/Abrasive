@@ -44,7 +44,6 @@ io.on(CONNECTION, socket => {
         playerFound = false;
         if (players.length != 0){
             for ( i = 0; i < players.length; i++){
-                console.log(players[i].getPlayer().getUsername().username);
                 if (players[i].getPlayer().getUsername().username == newUser.username) playerFound = true;
             }
         }
